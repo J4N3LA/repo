@@ -1,0 +1,14 @@
+C:\Users\Nika\Desktop\train\train\bin\Debug\net8.0\train.exe
+C:\Users\Nika\Desktop\train\train\bin\Debug\net8.0\train.deps.json
+C:\Users\Nika\Desktop\train\train\bin\Debug\net8.0\train.runtimeconfig.json
+C:\Users\Nika\Desktop\train\train\bin\Debug\net8.0\train.dll
+C:\Users\Nika\Desktop\train\train\bin\Debug\net8.0\train.pdb
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.AssemblyInfoInputs.cache
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.AssemblyInfo.cs
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.csproj.CoreCompileInputs.cache
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.dll
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\refint\train.dll
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.pdb
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\train.genruntimeconfig.cache
+C:\Users\Nika\Desktop\train\train\obj\Debug\net8.0\ref\train.dll
